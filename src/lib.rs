@@ -1,7 +1,7 @@
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
 
-[#pyfunction]
+#[pyfunction]
 fn say_hello() {
     println!("Saying hello from Rust!");
 }
