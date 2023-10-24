@@ -19,15 +19,19 @@ setup(
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
     "Programming Language :: Python",
-    "Programming Language :: Rust",
+    "Programming Language :: Rust",entry_points={
+    'console_scripts': [
+      'fib-number = flitton_fib_rs.',
+      'fib_number_command',
+    ],
+  },
     "Operating System :: POSIX",
     "Operating System :: MacOS :: MacOS X",
   ],
   zip_safe=False,
   entry_points={
     'console_scripts': [
-      'fib-number = flitton_fib_rs.',
-      'fib_number_command',
+        'fib-number = flitton_fib_rs.fib_number_command:fib_number_command',
     ],
   },
 )
